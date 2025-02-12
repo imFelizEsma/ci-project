@@ -25,9 +25,10 @@ jobs:
 
       - name: Instalar dependencias
         run: npm install
-      
-      - name: Instalar Jest
-        run: npm install --save-dev jest
+
+      - name: Verificar instalación de Jest
+        run: npx jest --version
 
       - name: Ejecutar pruebas
-        run: npm test
+        run: npx jest
+
